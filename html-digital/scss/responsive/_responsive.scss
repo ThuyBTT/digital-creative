@@ -119,6 +119,15 @@
 				@include rem("line-height", 36);
 			}
 	    }
+	    .section-block-link {
+	    	display: block;
+	        .left-content , .right-content {
+	        	display: block;
+	        	float: none;
+	        	padding: 30px 15px;
+	        	width: 100%;
+	        }
+	    }
 	}
 
 	@media screen and (max-width: 530px){

@@ -1104,7 +1104,14 @@ a.txt-lk-green, .txt-lk-green {
     font-size: 30px;
     font-size: 1.875rem;
     line-height: 36px;
-    line-height: 2.25rem; } }
+    line-height: 2.25rem; }
+  .section-block-link {
+    display: block; }
+    .section-block-link .left-content, .section-block-link .right-content {
+      display: block;
+      float: none;
+      padding: 30px 15px;
+      width: 100%; } }
 
 @media screen and (max-width: 530px) {
   .partner-extra .partner-item {
