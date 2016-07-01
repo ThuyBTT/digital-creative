@@ -1,0 +1,109 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Reset
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, em, img,strong, dl, dt, dd, li, fieldset, form, label, legend {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+img {
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:link,
+    &:visited {
+        color: #000;
+    }
+}
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+::-webkit-file-upload-button {
+    cursor:pointer;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a,
+button,
+input[type="submit"] {
+    &:focus, &:active {
+        box-shadow: none !important;
+    }
+} 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+	/*height: 100%;*/
+	min-height: 100%;
+}
+body {
+    font-family: $font-family-text;
+    font-size: $font-size-text;
+    font-weight: $font-normal;
+    color: #000;
+    background-color: #fff;
+	height: 100%;
+	min-height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+.menu-list ,.menu-mb-list ,.menu-right {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.view-our-work {     
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

@@ -1,0 +1,39 @@
+/****************** title *******************/
+	.main-logo {
+		background: url(../images/logo.svg) no-repeat 0 0;
+		background-size: 100%;
+		display: inline-block;
+		height: 60px;
+		overflow: hidden;
+		text-indent: -1983px;
+		width: 88px;
+		@include transition(all 0.3s ease);
+	}
+	.title-w71 {
+		color: $color-white;
+		@include rem("font-size", 71);
+		@include rem("line-height", 78);
+		font-family: $font-family-headline;
+	}
+	.title-b41 {
+		color: $color-black;
+		@include rem("font-size", 41);
+		@include rem("line-height", 55);
+		font-family: $font-family-headline;
+	}
+	.title-icon-26 {
+		color: $color-txt-default;
+		@include rem("font-size", 26);
+		@include rem("line-height", 32);
+		font-family: $font-family-headline;
+		white-space: nowrap;
+
+		.left-icon {
+			margin-right: 10px;
+		}
+		.left-icon ,.txt-ct {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+/****************** title .end *******************/

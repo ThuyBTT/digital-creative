@@ -1,0 +1,230 @@
+/****************** header comtainer *********************/
+	/* ====================== lines button nav rwd==================================================*/
+		.lines {
+			background-color: $color-white;
+			display: inline-block;
+			height: 2px;
+			@include transition (all .3s ease);
+			position: relative;
+			width: 20px;
+
+			&:before, &:after {
+				background-color: $color-white;
+				content: '';
+				display: inline-block;
+				height: 2px;
+				left: 0;
+				@include transition (all .3s ease);
+				position: absolute;
+				-webkit-transform-origin: 0.28571rem center;
+				transform-origin: 0.28571rem center;
+			}
+
+			&:before {
+				top: 8px;
+				width: 10px;
+			}
+
+			&:after {
+				top: -8px;
+				width: 24px;
+			}
+		}
+
+		.lines-button {
+			@include transition (all .3s ease);
+			cursor: pointer;
+			user-select: none;
+			height: 32px;
+			width: 38px;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:active {
+			 @include transition (all 0 ease);
+			}
+		}
+
+		.lines-button.x.open .lines {
+		  background: transparent;
+		}
+
+		.lines-button.x.open .lines:before, .lines-button.x.open .lines:after {
+		  -webkit-transform-origin: 50% 50%;
+		  transform-origin: 50% 50%;
+		  left: -2px;
+		  top: 0;
+		  width: 38px;
+		}
+
+		.lines-button.x.open .lines:before {
+		  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+		  transform: rotate3d(0, 0, 1, 45deg);
+		}
+
+		.lines-button.x.open .lines:after {
+		  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+		  transform: rotate3d(0, 0, 1, -45deg);
+		}
+
+		.btn-close {
+			@include transition (all .3s ease);
+			cursor: pointer;
+			user-select: none;
+			height: 23px;
+			width: 30px;
+
+			.lines {
+				background-color: transparent;
+				display: inline-block;
+				height: 2px;
+				position: relative;
+				width: 30px;
+				&:before, &:after {
+					background-color: #fff;
+					content: '';
+					display: inline-block;
+					height: 2px;
+					-webkit-transform-origin: 50% 50%;
+					transform-origin: 50% 50%;
+					left: -2px;
+					top: 0;
+					width: 30px;
+				}
+
+				&:before {
+					-webkit-transform: rotate3d(0, 0, 1, 45deg);
+					transform: rotate3d(0, 0, 1, 45deg);
+				}
+
+				&:after {
+					-webkit-transform: rotate3d(0, 0, 1, -45deg);
+					transform: rotate3d(0, 0, 1, -45deg);
+				}
+			}
+		}
+	/* ====================== lines button nav rwd .end ==================================================*/
+
+	.menu-list {
+		color: $color-white;
+		@include rem("font-size", 20);
+		@include rem("line-height", 20);
+
+		.menu-item-lk {
+			display: block;
+			padding: 5px 0 10px;
+			position: relative;
+
+			&:after {
+				background-color: $color-blue;
+				content:"";
+				height: 2px;
+				@include horizontal-align();
+				position: absolute;
+				top: 100%;
+				width: 0;
+				@include transition(all 0.5s ease);
+
+			}
+
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+
+		.prt-child {
+			display: inline-block;
+			min-width: 70px;
+			padding: 0 30px;
+		}
+	}
+
+	.menu-mb-list {
+		text-align: right;
+
+		.show-mobile {
+			display: none;
+		}
+
+		.menu-item-lk {
+			background-color: $color-black;
+			cursor: pointer;
+			display: inline-block;
+			@include rem("font-size", 18);
+			@include rem("line-height", 20);
+			padding: 5px 40px;
+			text-align: center;
+			text-transform: uppercase;
+			white-space: nowrap;
+			@include transition(all 0.5s ease);
+
+			&:hover {
+				background-color: $color-white;
+				color: $color-black;
+			}
+		}
+
+		.prt-child {
+			padding: 1px 0;
+		}
+	}
+
+	.dropdown-group-nav {
+		padding-left: 40px;
+		position: relative;
+		
+		.menu-mb-list {
+			margin-top: 20px;
+			position: absolute;
+			right: -400px;
+			top: 100%;
+			@include transition(right 0.8s ease);
+
+			&.show {
+				right: -10px;
+			}
+		}
+	}
+
+	.header-container {
+		background-color: transparent;
+		color: $color-white;
+		padding: 40px;
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+		@include transition(all 0.8s ease);
+
+		.menu-item-lk {
+			color: $color-white;
+		}
+
+		.dropdown-menu-bt {
+			padding: 5px 10px;
+		}
+
+		.main-title {
+			float: left;
+		}
+
+		.dropdown-group-nav ,.hd-nav-content {
+			float: right;
+			height: 60px;
+			padding-top: 14px;
+		}
+
+		&.header-fxbg {
+			background-color: $color-black;
+			padding: 20px 40px 15px;
+		}
+	}
+	.header-black {
+		.menu-item-lk {
+			color: $color-black;
+		}
+	}
+/****************** header comtainer .end*********************/

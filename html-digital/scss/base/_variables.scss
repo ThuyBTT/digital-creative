@@ -1,0 +1,74 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Webfonts
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Path
+$image-url: "../images" !default;
+$font-url: "../fonts" !default;
+
+// Font Face
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Std Md';
+	src: url('../fonts/ITCAvantGardeStd-Bold.eot');
+	src: url('../fonts/ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ITCAvantGardeStd-Bold.woff') format('woff'),
+		url('../fonts/ITCAvantGardeStd-Bold.ttf') format('truetype'),
+		url('../fonts/ITCAvantGardeStd-Bold.svg#ITCAvantGardeStd-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Variables
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Width & Height
+$width-container: 970px !default;
+$height-footer: 150px !default;
+
+// Color
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-blue: #3041a7 !default;
+$color-grey: #f3f6f9 !default;
+$color-txt-default: #4a4a4a !default;
+$color-txt-lg: #3b465d !default;
+
+
+// Font
+$font-family-headline: 'ITC Avant Garde Std Md', Arial, sans-serif !default;
+$font-family-text: 'Proxima Nova Rg', Arial, sans-serif !default;
+
+$font-size-headline: 30px !default;
+$font-size-text: 14px !default;
+
+$font-thin: 100 !default;
+$font-light: 300 !default;
+$font-normal: 400 !default;
+$font-semibold: 600 !default;
+$font-bold: 700 !default;
+
+// Z-index
+$zindex-navbar: 1000 !default;
+
+// Breakpoints
+$desktop: "(max-width: 1200px)" !default;
+$tablet: "(max-width: 992px)" !default;
+$phone: "(max-width: 768px)" !default;
+$smallphone: "(max-width: 480px)" !default;
+$extra-smallphone: "(max-width: 350px)" !default;
+$height-header-mobile: 72px !default;

@@ -1,0 +1,130 @@
+/******************** responsive ******************/
+
+	/******************* responsive for height ***************************/
+		@include breakpoint-height(780) {
+
+		}
+	/******************* responsive for height .end **********************/
+	@media screen and (max-width: 1024px){
+		 .partner-extra {
+	        padding-right: 15px;
+	        padding-left: 15px;
+	    }
+	    .container {
+	    	width: 100%;
+	    }
+	    .section-container-full {
+	    	.padding-content {
+	    		padding-bottom: 40px;
+	    		padding-top: 40px;
+	    	}
+	    }
+	    .view-our-work .caption-content {
+	    	padding-left: 20px;
+	    }
+
+	    .banner-type {
+	    	.title-w71 {
+				@include rem("font-size", 50);
+				@include rem("line-height", 51);
+			}
+	    }
+
+	    .title-b41 {
+	    	@include rem("font-size", 30);
+			@include rem("line-height", 39);
+	    }
+	    .view-our-work .caption-content .title-b41 {
+	    	margin-bottom: 20px;
+	    }
+
+	    .gallery-media-a {
+	    	.image-content {
+	    		margin-bottom: 35px;
+	    	}
+	    	.media-block .title-icon-26 {
+	    		margin-bottom: 20px;
+	    	}
+	    }
+	    .header-container {
+	    	padding: 15px 15px;
+
+	    	&.header-fxbg {
+	    		padding: 15px 15px;
+	    	}
+	    }
+	}
+
+	@media screen and (max-width: 900px){
+		.nav-aside {
+        	display: none;
+        }
+	}
+	@media screen and (max-width: 680px){
+		.header-container { 
+			.hd-nav-content {
+				display: none;
+			}
+
+			.menu-mb-list {
+				.show-mobile {
+					display: block;
+				}
+			}
+		}
+		.partner-extra {
+	        .partner-item {
+	        	height: 120px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.description-30 {
+				margin-bottom: 30px;
+			    margin-top: 60px;
+			}
+	    }
+
+	    .view-our-work {
+	    	.left-content, .right-content {
+		    	float: none;
+	            width: 100%;
+	        }
+	        .image-content {
+	        	.image {
+	        		height: auto;
+	        		max-width: 100%;
+	        	}
+	        }
+	    }	    
+
+        .partner-extra .description-30 {
+        	@include rem("font-size", 16);
+			@include rem("line-height", 20);
+        }
+
+        .title-b41 {
+	    	@include rem("font-size", 20);
+			@include rem("line-height", 29);
+	    }
+
+        .gallery-media-a .media-a-item {
+        	padding-bottom: 30px;
+        }
+
+        .banner-type {
+	    	.title-w71 {
+				@include rem("font-size", 30);
+				@include rem("line-height", 36);
+			}
+	    }
+	}
+
+	@media screen and (max-width: 530px){
+		.partner-extra {
+	        .partner-item {
+	        	width: 100%;
+	        }
+	    }
+	}
